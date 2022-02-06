@@ -1,4 +1,8 @@
 module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+  },
   extends: [
     'next',
     'next/core-web-vitals',
@@ -19,7 +23,39 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint'],
   rules: {
-    "prettier/prettier": "error",
+    '@next/next/no-img-element': 0,
+    '@typescript-eslint/ban-ts-comment': 0,
+    '@typescript-eslint/no-non-null-assertion': 0,
+    '@typescript-eslint/no-unused-vars': 2,
+    '@typescript-eslint/explicit-module-boundary-types': 0,
+    '@typescript-eslint/naming-convention': 0,
+    'consistent-return': 0,
+    'import/extensions': 0,
+    'no-await-in-loop': 0,
+    'no-continue': 0,
+    'no-restricted-syntax': 0,
+    'no-plusplus': 0,
+    'no-void': 0,
+    'react/button-has-type': 0,
+    'react/jsx-props-no-spreading': 0,
+    'react/require-default-props': 0,
+    'react/destructuring-assignment': 0,
+    'react/no-array-index-key': 0,
     'react/react-in-jsx-scope': 0,
+    'react/prop-types': 0,
+    'jsx-a11y/label-has-associated-control': [
+      2,
+      {
+        assert: 'either',
+      },
+    ],
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        components: ['Link'],
+        specialLink: ['hrefLeft', 'hrefRight'],
+        aspects: ['invalidHref', 'preferButton'],
+      },
+    ],
   },
-}
+};
