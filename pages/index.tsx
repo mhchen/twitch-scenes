@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import Link from 'next/link';
 
 const Home: NextPage = () => {
   return (
@@ -7,13 +8,19 @@ const Home: NextPage = () => {
 
       <ul>
         <li>
-          <a href="/scenes/countdown/">Countdown</a>
+          <Link href="/scenes/countdown/">
+            <a>Countdown</a>
+          </Link>
         </li>
         <li>
-          <a href="/scenes/one-guest/">One Guest</a>
+          <Link href="scenes/one-guest/">
+            <a>One Guest</a>
+          </Link>
         </li>
         <li>
-          <a href="/scenes/solo/">Solo</a>
+          <Link href="/scenes/solo/">
+            <a>Solo</a>
+          </Link>
         </li>
       </ul>
     </main>

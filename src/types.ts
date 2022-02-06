@@ -37,7 +37,7 @@ type OnChatHandlerWithMonkeyPatchedOnMessageExtra = {
 
 export type MonkeyPatchedComfyJSInterface = Omit<ComfyJSInstance, 'onChat'> & {
   onChat: OnChatHandlerWithMonkeyPatchedOnMessageExtra;
-}
+};
 
 export type ChannelProps = {
   title: string;
