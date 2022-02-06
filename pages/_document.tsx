@@ -9,7 +9,6 @@ import Document, {
 class MyDocument extends Document<{ pathname: string }> {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
-    console.log(initialProps);
 
     return { ...initialProps, pathname: ctx.pathname };
   }
