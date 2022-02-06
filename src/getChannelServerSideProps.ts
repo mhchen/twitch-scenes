@@ -62,6 +62,7 @@ async function getChannelInformation() {
   }).then((res) => res.json())) as ChannelInformationResponse;
 
   await revokeAccessToken(accessToken);
+  console.log(response);
   return response.data[0];
 }
 
