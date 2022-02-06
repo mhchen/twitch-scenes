@@ -633,7 +633,7 @@ ol li > :not(:last-child) {
   align-self: end;
   text-align: center;
 }
-.countdown .source #time {
+.countdown .source .time {
   text-align: center;
   font-size: 1800%;
   line-height: 1.1;
