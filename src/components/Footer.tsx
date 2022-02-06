@@ -1,4 +1,5 @@
 import React from 'react';
+import config from '../config';
 
 export type FooterProps = {
   title: string;
@@ -13,7 +14,7 @@ export default function Footer({ title }: FooterProps) {
         </div>
         <div>
           <h1 className="heading-1 stack-xs">{title}</h1>
-          <h2 className="heading-2">frontendeval.com</h2>
+          <h2 className="heading-2">{config.subtitle}</h2>
         </div>
       </div>
     </footer>
