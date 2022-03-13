@@ -35,7 +35,7 @@ class MyDocument extends Document<{ pathname: string }> {
             crossOrigin="true"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Metropolis&display=swap"
             rel="stylesheet"
           />
           <script

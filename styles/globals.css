@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Inria Sans", sans-serif;
+  font-family: "Metropolis", sans-serif;
   font-feature-settings: "liga" on;
   font-size: 100%;
   font-weight: 400;
@@ -36,7 +36,7 @@ body {
 .heading-2,
 .heading-3,
 .heading-4 {
-  font-family: "Inria Sans", sans-serif;
+  font-family: "Metropolis", sans-serif;
   line-height: 1.1;
 }
 
