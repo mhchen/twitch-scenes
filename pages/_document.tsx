@@ -28,16 +28,6 @@ class MyDocument extends Document<{ pathname: string }> {
             content="width=device-width, initial-scale=1.0"
           />
           <title>Genericmikechen Twitch streams</title>
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossOrigin="true"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Metropolis&display=swap"
-            rel="stylesheet"
-          />
           <script
             defer
             src="https://cdn.jsdelivr.net/npm/comfy.js@latest/dist/comfy.min.js"
