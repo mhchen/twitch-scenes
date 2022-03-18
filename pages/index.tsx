@@ -13,6 +13,11 @@ const Home: NextPage = () => {
           </Link>
         </li>
         <li>
+          <Link href="scenes/one-guest-no-code/">
+            <a>One Guest (no code)</a>
+          </Link>
+        </li>
+        <li>
           <Link href="scenes/one-guest/">
             <a>One Guest</a>
           </Link>

@@ -433,12 +433,13 @@ ol li > :not(:last-child) {
 }
 
 .solo,
+.one-guest-no-code,
 .one-guest {
   height: 1080px;
   overflow: hidden;
 }
-.layout,
-.layout {
+.solo .layout,
+.one-guest .layout {
   color: white;
   padding: 2rem;
   background-repeat: no-repeat;
@@ -449,15 +450,52 @@ ol li > :not(:last-child) {
   grid-template-areas: "main host" "footer host";
   gap: 2rem;
 }
+
+.one-guest-no-code .layout {
+  color: white;
+  padding: 2rem;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(circle at center center, transparent, black), linear-gradient(114deg, rgba(59, 59, 59, 0.05) 0%, rgba(59, 59, 59, 0.05) 50%, rgba(63, 63, 63, 0.05) 50%, rgba(63, 63, 63, 0.05) 100%), linear-gradient(186deg, rgba(173, 173, 173, 0.05) 0%, rgba(173, 173, 173, 0.05) 50%, rgba(237, 237, 237, 0.05) 50%, rgba(237, 237, 237, 0.05) 100%), linear-gradient(98deg, rgba(191, 191, 191, 0.05) 0%, rgba(191, 191, 191, 0.05) 50%, rgba(119, 119, 119, 0.05) 50%, rgba(119, 119, 119, 0.05) 100%), linear-gradient(58deg, rgba(95, 95, 95, 0.05) 0%, rgba(95, 95, 95, 0.05) 50%, rgba(189, 189, 189, 0.05) 50%, rgba(189, 189, 189, 0.05) 100%), linear-gradient(259deg, rgba(31, 31, 31, 0.05) 0%, rgba(31, 31, 31, 0.05) 50%, rgba(110, 110, 110, 0.05) 50%, rgba(110, 110, 110, 0.05) 100%), linear-gradient(41deg, rgba(142, 142, 142, 0.05) 0%, rgba(142, 142, 142, 0.05) 50%, rgba(84, 84, 84, 0.05) 50%, rgba(84, 84, 84, 0.05) 100%), linear-gradient(134deg, rgba(96, 96, 96, 0.05) 0%, rgba(96, 96, 96, 0.05) 50%, rgba(198, 198, 198, 0.05) 50%, rgba(198, 198, 198, 0.05) 100%), linear-gradient(46deg, rgba(12, 12, 12, 0.05) 0%, rgba(12, 12, 12, 0.05) 50%, rgba(71, 71, 71, 0.05) 50%, rgba(71, 71, 71, 0.05) 100%), radial-gradient(circle at center center, #0a1d61, #0a1d61);
+  display: grid;
+  grid-template-columns: 1fr 16.25%;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "main host" "footer host";
+  gap: 2rem;
+}
+
 .solo .source,
+.one-guest-no-code .source,
 .one-guest .source {
   width: 1522.4px;
   height: 856.35px;
   aspect-ratio: 16/9;
 }
+.host-card {
+  position: relative;
+}
+
+.host-img {
+  width: 100%;
+  aspect-ratio: 1;
+  position: relative;
+}
+.one-guest-no-code .host-img {
+  aspect-ratio: 16/9;
+}
+
+.one-guest-no-code .source {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 80px;
+  padding: 120px 80px;
+}
+
+.one-guest-no-code .host-card {
+  display: flex;
+}
+
 .solo .host-card,
 .one-guest .host-card {
-  position: relative;
   margin-bottom: 8rem;
 }
 .solo .host-img,
@@ -466,15 +504,6 @@ ol li > :not(:last-child) {
   height: 301.6px;
   aspect-ratio: 1;
   position: relative;
-}
-.solo .host-img svg,
-.one-guest .host-img svg {
-  position: absolute;
-  top: -12px;
-  left: -29px;
-  width: 119%;
-  height: auto;
-  z-index: 10;
 }
 .solo .nameplate,
 .one-guest .nameplate {
