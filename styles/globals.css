@@ -437,8 +437,8 @@ ol li > :not(:last-child) {
   height: 1080px;
   overflow: hidden;
 }
-.solo .layout,
-.one-guest .layout {
+.layout,
+.layout {
   color: white;
   padding: 2rem;
   background-repeat: no-repeat;
@@ -551,97 +551,9 @@ ol li > :not(:last-child) {
   top: auto;
 }
 
-.extra-life {
-  height: 1080px;
-  overflow-y: hidden;
-}
-.extra-life .layout {
-  text-shadow: 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 24px;
-  background-image: radial-gradient(circle at 52% 94%, rgba(169, 169, 169, 0.04) 0%, rgba(169, 169, 169, 0.04) 50%, rgba(199, 199, 199, 0.04) 50%, rgba(199, 199, 199, 0.04) 100%), radial-gradient(circle at 96% 98%, rgba(61, 61, 61, 0.04) 0%, rgba(61, 61, 61, 0.04) 50%, rgba(201, 201, 201, 0.04) 50%, rgba(201, 201, 201, 0.04) 100%), radial-gradient(circle at 93% 97%, rgba(227, 227, 227, 0.04) 0%, rgba(227, 227, 227, 0.04) 50%, rgba(145, 145, 145, 0.04) 50%, rgba(145, 145, 145, 0.04) 100%), radial-gradient(circle at 79% 52%, rgba(245, 245, 245, 0.04) 0%, rgba(245, 245, 245, 0.04) 50%, rgba(86, 86, 86, 0.04) 50%, rgba(86, 86, 86, 0.04) 100%), linear-gradient(90deg, #d209c6, #192676);
-  background-repeat: no-repeat;
-  display: grid;
-  grid-template-columns: 1fr 16.25%;
-  grid-template-rows: 44px auto 1fr;
-  grid-template-areas: "header logo" "main host" "footer host";
-  gap: 24px;
-}
-.extra-life .source {
-  width: 1543.8px;
-  height: 868.383px;
-  aspect-ratio: 16/9;
-  position: relative;
-}
-.extra-life .gee-gee {
-  right: auto;
-  left: 350px;
-}
-.extra-life .host-card {
-  position: relative;
-}
-.extra-life .host-img {
-  width: 304.2px;
-  height: 304.2px;
-  aspect-ratio: 1;
-}
-.extra-life [data-grid-area=footer] {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-}
-.extra-life [data-grid-area=footer] > * {
-  flex: 1;
-}
-.extra-life .nameplate {
-  padding: 0.5rem 2rem;
-}
-.extra-life .nameplate span {
-  font-size: 1.25rem;
-}
-.extra-life .scroll-container {
-  height: 481px;
-  margin-top: 85px;
-}
-.extra-life .chat p {
-  flex-direction: column;
-  gap: 0;
-}
-.extra-life .chat strong {
-  display: block;
-}
-.extra-life .el-last-donors {
-  columns: 2;
-}
-.extra-life .heading-4 {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  white-space: nowrap;
-}
-.extra-life .heading-4 + p {
-  font-size: 1rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.extra-life .notification {
-  right: auto;
-}
-
 .countdown {
   height: 1080px;
   overflow-y: hidden;
-}
-.countdown .layout {
-  color: white;
-  padding: 2rem;
-  background-repeat: no-repeat;
-  background-image: radial-gradient(circle at 33% 41%, rgba(250, 250, 250, 0.03) 0%, rgba(250, 250, 250, 0.03) 50%, rgba(37, 37, 37, 0.03) 50%, rgba(37, 37, 37, 0.03) 100%), radial-gradient(circle at 76% 49%, rgba(28, 28, 28, 0.03) 0%, rgba(28, 28, 28, 0.03) 50%, rgba(187, 187, 187, 0.03) 50%, rgba(187, 187, 187, 0.03) 100%), radial-gradient(circle at 41% 99%, rgba(247, 247, 247, 0.03) 0%, rgba(247, 247, 247, 0.03) 50%, rgba(120, 120, 120, 0.03) 50%, rgba(120, 120, 120, 0.03) 100%), radial-gradient(circle at 66% 27%, rgba(17, 17, 17, 0.03) 0%, rgba(17, 17, 17, 0.03) 50%, rgba(156, 156, 156, 0.03) 50%, rgba(156, 156, 156, 0.03) 100%), linear-gradient(0deg, #ac1d1d, #272765);
-  display: grid;
-  grid-template-columns: 1fr 16.25%;
-  grid-template-rows: auto 1fr;
-  grid-template-areas: "main host" "footer host";
-  gap: 2rem;
 }
 .countdown .source {
   width: 1522.4px;
