@@ -438,8 +438,7 @@ ol li > :not(:last-child) {
   height: 1080px;
   overflow: hidden;
 }
-.solo .layout,
-.one-guest .layout {
+.layout {
   color: white;
   padding: 2rem;
   background-repeat: no-repeat;
