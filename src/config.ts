@@ -1,7 +1,7 @@
 const config = {
-  guestName: 'James Robinson',
-  guestHandle: 'JayRobinDev',
-  subtitle: 'frontendeval.com',
+  guestName: 'Lyn Kim',
+  guestHandle: 'onwardLyn',
+  subtitle: '',
 };
 
 export default config;
