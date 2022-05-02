@@ -27,6 +27,11 @@ const Home: NextPage = () => {
             <a>Solo</a>
           </Link>
         </li>
+        <li>
+          <Link href="/scenes/solo-no-code/">
+            <a>Solo (no code)</a>
+          </Link>
+        </li>
       </ul>
     </main>
   );
